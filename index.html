@@ -4,49 +4,57 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
         <title>Account Book</title>
     </head>
     <body>
-        <h2>작은 가계부</h2>
-        <div class="total-contents">
-            <div class="total-amount">총액</div>
-            <div class="total-income">수입</div>
-            <div class="total-expend">지출</div>
-        </div>
+        <div id="wrapper">
+            <h2>작은 가계부</h2>
+            <div class="account-contents">
+                <div class="total-contents">
+                    <div class="total-amount">총액</div>
+                    <div class="total-side-wrap">
+                        <div class="total-side total-income">수입</div>
+                        <div class="total-side total-expend">지출</div>
+                    </div>
+                </div>
 
-        <div class="history-contents">
-            <div class="history-category">
-                <div class="history-full"></div>
-                <div class="history-income"></div>
-                <div class="history-expend"></div>
-                <div class="history-init"></div>
+                <div class="history-contents">
+                    <div class="history-category">
+                        <div class="history-type">전체 내역</div>
+                        <div class="history-full">전체</div>
+                        <div class="history-income">수입</div>
+                        <div class="history-expend">지출</div>
+                        <div class="history-init">초기화</div>
+                    </div>
+
+                    <div class="history-list"></div>
+                </div>
             </div>
 
-            <div class="history-list"></div>
-        </div>
+            <div class="input-contents">
+                <div class="type-input-boxes">
+                    <label for="">수입</label>
+                    <input type="radio" id="type-income" name="type-input" />
+                    <label for="">지출</label>
+                    <input type="radio" id="type-expand" name="type-input" />
+                </div>
 
-        <div class="input-contents">
-            <div class="type-input-boxes">
-                <label for="">수입</label>
-                <input type="radio" id="type-income" name="type-input" />
-                <label for="">지출</label>
-                <input type="radio" id="type-expand" name="type-input" />
+                <div class="info-input-boxes">
+                    <label for="select">종류</label>
+                    <select id="type-select">
+                        <option value="">--Please choowe an option--</option>
+                    </select>
+                    <label for="">금액</label>
+                    <input type="number" class="amount" autocomplete="off" />
+                    <label for="">내용</label>
+                    <input type="text" class="" autocomplete="off" placeholder="내용을 입력하세요" />
+                </div>
+
+                <button class="save-btn btn">저장하기</button>
+                <button class="close-btn btn">닫기</button>
             </div>
-
-            <div class="info-input-boxes">
-                <label for="select">종류</label>
-                <select id="type-select">
-                    <option value="">--Please choowe an option--</option>
-                </select>
-                <label for="">금액</label>
-                <input type="number" class="amount" autocomplete="off" />
-                <label for="">내용</label>
-                <input type="text" class="" autocomplete="off" placeholder="내용을 입력하세요" />
-            </div>
-
-            <button class="save-btn btn">저장하기</button>
-            <button class="close-btn btn">닫기</button>
         </div>
 
         <script src="js/account.js"></script>
