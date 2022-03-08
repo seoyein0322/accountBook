@@ -13,7 +13,6 @@ body::-webkit-scrollbar {
     width: 750px;
     height: 100vh;
     overflow: hidden;
-    border: 1px solid #000;
 }
 
 .md {
@@ -62,25 +61,32 @@ h2 {
 /* history-contents */
 .history-category {
     display: flex;
+    flex-direction: row-reverse;
     margin: 20px;
 }
 .history-category > div {
     margin: 20px;
-}
-.info-input-boxes {
-    display: flex;
-    flex-direction: column;
 }
 
 /* input-contents */
 .input-contents {
     position: absolute;
     bottom: 0;
-    width: 750px;
-    height: 200px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
     background: #95d5b2;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     font-family: "SCDream3", serif;
     font-size: 20px;
+}
+
+.input-contents > div {
+    margin-top: 20px;
+}
+
+.info-input-boxes {
+    display: flex;
+    flex-direction: column;
 }
