@@ -95,3 +95,9 @@ h2 {
     border-radius: 10px;
     background: rgb(112, 199, 126);
 }
+
+.add-btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
