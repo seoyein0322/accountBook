@@ -90,3 +90,8 @@ h2 {
     display: flex;
     flex-direction: column;
 }
+
+.history-list > li {
+    border-radius: 10px;
+    background: rgb(112, 199, 126);
+}
