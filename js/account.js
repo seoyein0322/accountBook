@@ -7,6 +7,8 @@ const totalExpend = document.querySelector(".total-expend");
 const typeSelect = document.querySelector("#type-select");
 const typeIncome = document.querySelector("#type-income");
 const typeExpand = document.querySelector("#type-expand");
+const addList = document.querySelector(".add-list");
+const addBtn = document.querySelector(".add-btn");
 const incomeOption = ["월급", "용돈", "지원금", "저축", "기타"];
 const expendOption = ["쇼핑", "여가생활", "교통/차량", "식비", "기타"];
 let amountVal = amount.value;
@@ -18,6 +20,8 @@ let total = icome + expend;
 window.addEventListener("DOMContentLoaded", function () {
     createTotalContents();
 });
+
+addBtn.addEventListener("click", function () {});
 
 function createTotalContents() {
     totalAmount.insertAdjacentHTML("beforeend", total);

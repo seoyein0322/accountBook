@@ -93,11 +93,25 @@ h2 {
 
 .history-list > li {
     border-radius: 10px;
-    background: rgb(112, 199, 126);
+    background: rgb(185, 221, 191);
 }
 
 .add-btn {
+    display: fixed;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    background: rgb(112, 199, 126);
+}
+
+.add-list {
+    position: fixed;
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #000;
 }
