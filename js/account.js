@@ -7,8 +7,11 @@ const totalExpend = document.querySelector(".total-expend");
 const typeSelect = document.querySelector("#type-select");
 const typeIncome = document.querySelector("#type-income");
 const typeExpand = document.querySelector("#type-expand");
+const inputContents = document.querySelector(".input-contents");
 const addList = document.querySelector(".add-list");
 const addBtn = document.querySelector(".add-btn");
+const saveBtn = document.querySelector(".save-btn");
+const closeBtn = document.querySelector(".close-btn");
 const incomeOption = ["월급", "용돈", "지원금", "저축", "기타"];
 const expendOption = ["쇼핑", "여가생활", "교통/차량", "식비", "기타"];
 let amountVal = amount.value;
@@ -21,7 +24,8 @@ window.addEventListener("DOMContentLoaded", function () {
     createTotalContents();
 });
 
-addBtn.addEventListener("click", function () {});
+addBtn.addEventListener("click", clickAddList);
+closeBtn.addEventListener("click", closeOptionBoxes);
 
 function createTotalContents() {
     totalAmount.insertAdjacentHTML("beforeend", total);
@@ -30,6 +34,16 @@ function createTotalContents() {
 }
 
 function countAccount() {}
+
+function clickAddList() {
+    addBtn.classList.add(".d-none");
+    inputContents.classList.remove(".d-none");
+}
+
+function closeOptionBoxes() {
+    addBtn.classList.remove(".d-none");
+    inputContents.classList.add(".d-none");
+}
 
 function chooseTypeAndOption() {
     const options = ``;
