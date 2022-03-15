@@ -4,8 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
+
         <title>Account Book</title>
     </head>
     <body>
@@ -15,8 +22,8 @@
                 <div class="total-contents">
                     <div class="total-amount"></div>
                     <div class="total-side-wrap">
-                        <div class="total-side total-income"></div>
-                        <div class="total-side total-expend"></div>
+                        <div class="total-side total-income blue"></div>
+                        <div class="total-side total-expend red"></div>
                     </div>
                 </div>
 
@@ -33,7 +40,7 @@
                 </div>
 
                 <div class="add-list">
-                    <div class="add-btn"></div>
+                    <div class="add-btn">click</div>
                 </div>
             </div>
 
@@ -49,6 +56,13 @@
                     <label for="type-select">종류</label>
                     <select id="type-select">
                         <option value="">--Please choowe an option--</option>
+                        <option value="">월급</option>
+                        <option value="">용돈</option>
+                        <option value="">쇼핑</option>
+                        <option value="">여가생활</option>
+                        <option value="">교통/차량</option>
+                        <option value="">식비</option>
+                        <option value="">기타</option>
                     </select>
                     <label for="">금액</label>
                     <input type="number" class="amount" autocomplete="off" />
