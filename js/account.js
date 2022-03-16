@@ -1,4 +1,5 @@
 const historyList = document.querySelector(".history-list");
+const option = document.querySelector("option");
 const amount = document.querySelector(".amount");
 const memo = document.querySelector(".memo");
 const totalAmount = document.querySelector(".total-amount");
@@ -36,6 +37,10 @@ function countAccount() {}
 function clickAddList() {
     addBtn.classList.add("d-none");
     inputContents.classList.remove("d-none");
+
+    option.value = "";
+    amount.value = "";
+    memo.value = "";
 }
 
 function closeOptionBoxes() {
